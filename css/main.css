@@ -1,0 +1,382 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #f7f7f7;
+	font-size: 1em;
+	font-family: Helvetica, Verdana, sans-serif;
+	background-attachment: fixed;
+	background-image: url(../image/bg.jpg);
+	background-size: auto;
+	background-repeat: repeat;
+}
+
+#page-wrap {
+	min-height: calc(100vh - 60px);
+	/* Минус длина футера */
+}
+
+#mini {
+	font-size: 0.1pt;
+	height: 1px;
+}
+
+
+/* МЕНЮ HEADER ;) */
+
+@media (min-width:900px) {
+	#menu {
+		align-items: center;
+		justify-content: center;
+		height: inherit;
+		float: left;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media (max-width:899px) {
+	#menu {
+		align-items: center;
+		justify-content: center;
+		height: inherit;
+		float: left;
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.menu_bok {
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+	margin-left: 2%;
+	height: auto;
+	width: 20%;
+	margin-right: 2%;
+}
+
+.menu_center {
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+	height: auto;
+	width: 52%;
+}
+
+#menu img {
+	width: 100%;
+	height: auto;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#menu img:hover{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* ВОЛНА */
+
+.wave {
+	height: 50px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+	background-image: url(../image/wave.png);
+	background-size: contain;
+}
+
+
+/* О себе */
+
+.introduce {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+	border-right: 10px dotted black;
+	border-left: 10px dotted black;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	color: #e4e4e4;
+}
+
+.about {
+	text-align: center;
+	width: 68%;
+	height: auto;
+	background: #232323;
+	border-radius: 20px;
+  padding: 2%;
+}
+
+.star1,
+.star2 {
+	position: relative;
+	width: 10%;
+	margin: 3%;
+}
+
+.star1 {
+	float: left;
+}
+
+.star2 {
+	float: right;
+}
+
+@media (max-width:899px) {
+	.star1,
+	.star2 {
+		display: none;
+	}
+}
+
+@media (max-width:899px) {
+	.about {
+		width: 90%;
+	}
+}
+
+@media (max-width:899px) {
+	.introduce {
+		width: 90%;
+	}
+}
+
+.text_about {
+	text-align:justify;
+  margin-bottom: 10px;
+	width: 100%;
+}
+
+.about img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+/*Паралакс */
+
+.parallax {
+	background-image: url("../image/les_cherno-belye_snizu_derevya_mrachnye_krony_tuman_molchanie_60216_2560x1080.jpg");
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10vw;
+	font-family: fantasy;
+	color: #e4e4e4;
+	text-shadow: 1px 1px 2px black, 0 0 0.5em #e4e4e4;
+}
+
+@media (min-width:900px) {
+	.parallax {
+		height: 28vh;
+	}
+}
+
+@media (max-width:899px) {
+	.parallax {
+		height: 20vh;
+	}
+}
+
+/* Наши ПРОЕКТЫ для статей */
+
+#categories {
+	float: left;
+	background-image: url(../image/stripes-26447_960_720.png);
+}
+
+.category img {
+	width: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.category img:hover{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.category {
+	margin: 3%;
+	float: left;
+}
+
+@media (min-width:900px) {
+	.category {
+		width: 27.33333%;
+	}
+}
+
+@media (max-width:899px) {
+	.category {
+		width: 44%;
+	}
+}
+
+@media (min-width:900px) {
+	#categories {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media (max-width:899px) {
+	#categories {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+P{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-indent: 10px;
+}
+/* footer*/
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../image/footer.png);
+	background-size;
+	height: 30vh;
+	width: 100%;
+}
+
+footer a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:50%;
+	float:left;
+}
+
+footer a img{
+	height: 25vh;
+	width:auto;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+footer a img:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/*video*/
+.forvideo{
+	width: 46%;
+	height: 350px;
+	float:left;
+	margin:2%;
+	display: block;
+	border-radius: 5px;
+}
+
+@media (max-width:899px) {
+	.forvideo {
+		width: 96%;
+		height: 250px;
+	}
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+/*galery_example*/
+
+.galery_example{
+	width:42%;
+	height: auto;
+	margin: 4%;
+	float: left;
+	display: block;
+	border-radius: 10px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.galery_example:hover{
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+@media (max-width:899px) {
+	.galery_example {
+		width: 92%;
+	}
+}
+
+.gallery_text{
+	font-size: 2em;
+	color: #444;
+	text-align: center;
+}
+
+/*Maps*/
+#map{
+	width: 100%;
+	height: 350px;
+	display: block;
+	border-radius: 5px;
+}
+/*
+@media (max-width:899px) {
+	#map {
+		height: 250px;
+	}
+} */
+
+.kontakti{
+	font-size: 2em;
+	color: #433;
+	width:46%;
+	height: auto;
+	margin: 2%;
+	float: left;
+	display: block;
+}
+
+@media (max-width:899px) {
+	.kontakti {
+		width: 96%;
+	}
+}
+
+h5{
+	text-align: left;
+	font-size: 0.9em;
+}
